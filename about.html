@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="styles.css"/>
+    <link rel="icon" href="images/img1.png">
+	<title> The Sharing Project: About Us </title>
+	</head>
+	
+	
+	<body>
+	<div id = "navbar">
+        <img src= "images/logo123.png" id="logo" align="left"/><h3 id="logotext">THE &nbsp; <br>SHARING &nbsp; <br>PROJECT <h5 style="padding-left:302px; margin-top: -30px">Non-Profit Organization</h5></h3>
+	<div id="navbar-right">
+		<a href="index.html">HOME</a> 
+		<a class ="active" href ="about.html">ABOUT</a>
+        <a href="team.html">OUR TEAM</a>
+		<div class="dropdown1">
+		<button onclick="drop1()" class="dropbtn1">GET INVOLVED</button>
+        <div id="myDropdown1" class="dropdown-content1"> 
+            <a style="border:none" href="volunteer.html">Volunteer</a>
+            <a style="border:none" href="donate.html">Donate</a>
+                </div>
+            </div>
+        <div class="dropdown">
+        <button onclick="drop()" class="dropbtn">ADVICE FOR BEGINNER GARDENERS</button>
+            <div id="myDropdown" class="dropdown-content">
+            <a style="border:none" href="creatingbeds.html">Creating Raised Garden Beds</a>
+            <a style="border:none" href="companionplanting.html">What is Companion Planting?</a>
+            <a style="border:none" href="pestmanagement.html">Pest Management</a>
+                </div>
+            </div>
+		<a href ="contact.html">CONTACT US</a>
+		</div> 	
+	</div> 
+        
+    <div class="sidenav">
+        <a href="https://www.facebook.com/The-Sharing-Project-100773538293471" target ="_blank"><img alt="The Sharing Project's Facebook"src="images/facebook.png"></a>
+        <a href="https://www.instagram.com/thesharingproject/" target ="_blank"><img alt="The Sharing Project's Instagram" src="images/instagram.png"></a>
+        <a href="mailto:thesharingproject2020@gmail.com" target ="_blank"><img alt="The Sharing Project's Gmail" src="images/gmail.png"></a>
+        </div>
+    
+     
+
+	<div style = "margin-top:210px; padding:15px 15px 800px; font-size:30px">
+        &nbsp; <br>
+        &nbsp; <br>
+        <div class="maintext">
+        <h1 style="text-align: left"><strong>ABOUT &nbsp;<br>THE SHARING PROJECT</strong></h1>
+        <i><p style="text-align: left;">The Sharing Project is a community based, non-profit organization dedicated to help families in need by donating fresh, healthy produce. Currently, we are located near the Mendham, NJ area and run by high school students from different  parts of the New Jersey area. </p> </i>
+            <hr>
+            <p style="font-size: 20px; padding-top: 20px; padding-bottom: 20px">  <a class="order123" style="text-decoration: none; margin-left: 10%; "href="board.html">Board of Trustees</a>  <a class="order123" style="text-decoration: none; float:right; margin-right: 10% ;"href="volunteers.html">Our Team </a></p>
+            <hr>
+        &nbsp; <br>
+        &nbsp; <br>
+        <p style="display: inline-block; float:left; width: 49%; padding-left: 7px; padding-top: 7px; margin-bottom: 5%; font-size:22px"><b style="font-size: 28px">Our Mission</b>
+        &nbsp; <br> &nbsp; <br> <i>
+        The Sharing Project's mission is to help families in need by donating fresh and healthy food, and educate youths about gardening, healthly nutrition, sustainability, and social responsibility </i></p>
+        
+        <p style="display: inline-block; float:left; width: 49%; padding-left: 7px; padding-top: 7px; margin-bottom: 5%; font-size:22px; margin-left: 2%"><b style="font-size: 28px">Our Short Term Goals</b>
+        &nbsp; <br> &nbsp; <br><i>Our goals are to grow and donate fresh produce to as many families as we can, to inspire more high schoolers, and gardening communities to join our cause and feed more families, and to educate our community about sustainable gardening practices. </i></p>
+        
+        <p style="display: inline-block;  float:left; width: 49%; padding-left: 7px; padding-top: 7px; margin-bottom: 5%; font-size:22px;"><b style="font-size: 28px">Our Long Term Goals</b>
+        &nbsp; <br> &nbsp; <br><i>
+        Our long term goals include: Build a sustainable program that will continue for years to come; Raise a new generation of leaders who create the world a better place; Create a dedicated community garden in Mendham; Expand the project to other counties</i></p>
+        
+        <p style="display: inline-block;  float:left; width: 49%;   padding-left: 7px; padding-top: 7px; margin-bottom: 5%; margin-left: 2%; font-size:22px;"><b style="font-size: 28px">How Will We Achieve these Goals?</b>
+        &nbsp; <br> &nbsp; <br> <i>
+        - Volunteering at Local Food Pantries
+            &nbsp; <br>
+        - Partenering with Local Farmers & Corporations
+            &nbsp; <br>
+        - Fundraising Money for our Community
+            &nbsp; <br>
+        - Growing Fresh Produce*</i></p> 
+        </div>
+        
+            
+        
+        
+    </div>
+        
+        
+
+    
+    <script>
+        
+    window.onscroll = function() {scrollFunction()};
+        
+
+        function drop() {
+        document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) { 
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i; 
+                for (i=0; i < dropdowns.length; i++){
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+        function drop1() {
+        document.getElementById("myDropdown1").classList.toggle("show1");
+        }
+        
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn1')) { 
+                var dropdowns = document.getElementsByClassName("dropdown-content1");
+                var i; 
+                for (i=0; i < dropdowns.length; i++){
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show1')) {
+                        openDropdown.classList.remove('show1');
+                    }
+                }
+            }
+        }
+	</script> 
+        
+    </body>	
+
+</html>
+		

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="styles.css"/>
+    <link rel="icon" href="images/img1.png">
+	<title> The Sharing Project: Contact Us </title>
+	</head>
+	
+	
+	<body>
+	<div id = "navbar">
+        <img src= "images/logo123.png" id="logo" align="left"/><h3 id="logotext">THE &nbsp; <br>SHARING &nbsp; <br>PROJECT <h5 style="padding-left:302px; margin-top: -30px">Non-Profit Organization</h5></h3>
+	<div id="navbar-right">
+		<a href="index.html">HOME</a> 
+		<a href ="about.html">ABOUT</a>
+        <a href="team.html">OUR TEAM</a>
+		<div class="dropdown1">
+		<button onclick="drop1()" class="dropbtn1">GET INVOLVED</button>
+        <div id="myDropdown1" class="dropdown-content1"> 
+            <a style="border:none" href="volunteer.html">Volunteer</a>
+            <a style="border:none" href="donate.html">Donate</a>
+                </div>
+            </div>
+        <div class="dropdown">
+        <button onclick="drop()" class="dropbtn">ADVICE FOR BEGINNER GARDENERS</button>
+            <div id="myDropdown" class="dropdown-content">
+            <a style="border:none" href="creatingbeds.html">Creating Raised Garden Beds</a>
+            <a style="border:none" href="companionplanting.html">What is Companion Planting?</a>
+            <a style="border:none" href="pestmanagement.html">Pest Management</a>
+                </div>
+            </div>
+		<a class = "active" href ="contact.html">CONTACT US</a>
+		</div> 	
+	</div> 
+        
+    <div class="sidenav">
+        <a href="https://www.facebook.com/The-Sharing-Project-100773538293471" target ="_blank"><img alt="The Sharing Project's Facebook"src="images/facebook.png"></a>
+        <a href="https://www.instagram.com/thesharingproject/" target ="_blank"><img alt="The Sharing Project's Instagram" src="images/instagram.png"></a>
+        <a href="mailto:thesharingproject2020@gmail.com" target ="_blank"><img alt="The Sharing Project's Gmail" src="images/gmail.png"></a>
+        </div>
+    
+     
+
+	<div style = "margin-top:210px; padding:15px 15px 10px; font-size:30px">
+
+    &nbsp; <br>
+    &nbsp; <br>
+        &nbsp; <br>
+        &nbsp; <br>
+        
+    <div style="display: block; margin-left: 32%; margin-right: 32%">
+        <strong style="text-align: center; font-size: 60px"> CONTACT US </strong> <p style="font-size:20px;"> We want to hear from you if you have any questions or concerns. <br> Please see our social media and email accounts below.<br><br> Email: thesharingproject2020@gmail.com</p>
+        <br>
+    <a href="https://www.facebook.com/The-Sharing-Project-100773538293471" target ="_blank" class="fa fa-facebook" style="float:left; margin-right: 50px;"><img src="images/logo1.png" style="width: 75px; height: 75px;"></a>
+    <a href="https://www.instagram.com/thesharingproject/" target ="_blank" class="fa fa-insta" style="float:left; margin-right: 50px;"><img src="images/logo3.png" style="width: 75px; height: 75px;"></a>
+    <a href="mailto:thesharingproject2020@gmail.com" target="_blank" class="fa fa-gmail"><img src="images/logo4.png" style="width: 75px; height: 75px;"></a>
+
+        </div>
+    </div>
+        
+        
+
+    
+    <script>
+
+        function drop() {
+        document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) { 
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i; 
+                for (i=0; i < dropdowns.length; i++){
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+        function drop1() {
+        document.getElementById("myDropdown1").classList.toggle("show1");
+        }
+        
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn1')) { 
+                var dropdowns = document.getElementsByClassName("dropdown-content1");
+                var i; 
+                for (i=0; i < dropdowns.length; i++){
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show1')) {
+                        openDropdown.classList.remove('show1');
+                    }
+                }
+            }
+        }
+	</script> 
+        
+    </body>	
+
+</html>
+		

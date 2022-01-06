@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" type="text/css" href="styles.css"/>
+    <link rel="icon" href="images/img1.png">
+	<title> The Sharing Project: Volunteer</title>
+	</head>
+	
+	
+	<body>
+	<div id = "navbar">
+        <img src= "images/logo123.png" id="logo" align="left"/><h3 id="logotext">THE &nbsp; <br>SHARING &nbsp; <br>PROJECT <h5 style="padding-left:302px; margin-top: -30px">Non-Profit Organization</h5></h3>
+	<div id="navbar-right">
+		<a href="index.html">HOME</a> 
+		<a href ="about.html">ABOUT</a>
+        <a href="team.html">OUR TEAM</a>
+        <div class="dropdown1">
+		<button onclick="drop1()" class="dropbtn1" style="background-color:#48b876; color:white ">GET INVOLVED</button>
+        <div id="myDropdown1" class="dropdown-content1"> 
+            <a style="border:none" href="volunteer.html">Volunteer</a>
+            <a style="border:none" href="donate.html">Donate</a>
+                </div>
+            </div>
+        <div class="dropdown">
+        <button onclick="drop()" class="dropbtn">ADVICE FOR BEGINNER GARDENERS</button>
+            <div id="myDropdown" class="dropdown-content">
+            <a style="border:none" href="creatingbeds.html">Creating Raised Garden Beds</a>
+            <a style="border:none" href="companionplanting.html">What is Companion Planting?</a>
+            <a style="border:none" href="pestmanagement.html">Pest Management</a>
+                </div>
+            </div>
+        <a href ="contact.html">CONTACT US</a>
+		
+		</div> 	
+	</div> 
+        
+        <div class="sidenav">
+        <a href="https://www.facebook.com/The-Sharing-Project-100773538293471" target ="_blank"><img alt="The Sharing Project's Facebook"src="images/facebook.png"></a>
+        <a href="https://www.instagram.com/thesharingproject/" target ="_blank"><img alt="The Sharing Project's Instagram" src="images/instagram.png"></a>
+        <a href="mailto:thesharingproject2020@gmail.com" target ="_blank"><img alt="The Sharing Project's Gmail" src="images/gmail.png"></a>
+        </div>
+    
+     
+        
+	<div style = "margin-top:210px; padding:15px 15px 700px; font-size:30px">
+        <div class="maintext"> 
+
+    &nbsp; <br>
+    &nbsp; <br>
+        <h1 style="text-align: left"><strong>VOLUNTEER AT&nbsp;<br>THE SHARING PROJECT</strong></h1>
+        <p style="font-size: 28px"> 
+          <b>  We welcome individual and group volunteers to get engaged with variety of activities: </b><br>
+⦁	Help out with building The Sharing Project Garden on Mt. Pleasant field in Mendham (March-May) <br>
+⦁	Join student gardener volunteers crew <br>
+⦁	Join local gardener volunteers and grow produce for donations at your garden <br>
+⦁	Take a lead on one of activities: fundraising, PR, Community outreach <br>
+⦁	Help with fundraising and/or grant applications to raise money to build the dedicated The Sharing Project Garden <br> <br>    
+<i>Contact us at <a href="mailto:thesharingproject2020@gmail.com" target="_blank">thesharingproject2020@gmail.com</a> to discuss your volunteering interests and suggestions</i>
+<p>
+        
+        <img style="width:35%; float: left; margin-left: 10%; float: left;margin-bottom: 2%"src="images/team1.jpg">
+        <img style="width:35%; float: left; margin-left: 10%; margin-bottom: 2%"src="images/team2.jpg">
+        <img style="width:35%; float: left; margin-left: 10%"src="images/team3.jpg">
+        <img style="width:35%; float: left; margin-left: 10%"src="images/team4.jpg">
+        </div>
+        </div>
+
+        
+        
+    <script>
+    var slideIndex = 1; 
+    showSlides(slideIndex); 
+	window.onscroll = function() {scrollFunction()};
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+        
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+        
+    function showSlides(n) {
+        var i; 
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < dots.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i=0; i<dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+
+        
+        function drop() {
+        document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) { 
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i; 
+                for (i=0; i < dropdowns.length; i++){
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+        
+        function drop1() {
+        document.getElementById("myDropdown1").classList.toggle("show1");
+        }
+        
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn1')) { 
+                var dropdowns1 = document.getElementsByClassName("dropdown-content1");
+                var i1; 
+                for (i1=0; i1 < dropdowns1.length; i1++){
+                    var openDropdown1 = dropdowns1[i];
+                    if (openDropdown1.classList.contains('show1')) {
+                        openDropdown1.classList.remove('show1');
+                    }
+                }
+            }
+        }
+	</script> 
+        
+    </body>	
+
+</html>
+		

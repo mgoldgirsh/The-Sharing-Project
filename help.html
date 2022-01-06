@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="styles.css"/>
+    <link rel="icon" href="images/img1.png">
+	<title> The Sharing Project: Get Involved </title>
+	</head>
+	
+	
+	<body>
+	<div id = "navbar">
+        <img src= "images/logo123.png" id="logo" align="left"/><h3 id="logotext">THE &nbsp; <br>SHARING &nbsp; <br>PROJECT </h3>
+	<div id="navbar-right">
+		<a href="index.html">HOME</a> 
+		<a  href ="about.html">ABOUT US</a>
+        <a href="team.html">OUR TEAM</a>
+		<div class="dropdown1">
+		<button onclick="drop1()" class="dropbtn1" class="active">GET INVOLVED</button>
+        <div id="myDropdown1" class="dropdown-content1"> 
+            <a style="border:none" href="volunteer.html">Volunteer</a>
+            <a style="border:none" href="donate.html">Donate</a>
+                </div>
+            </div>
+        <div class="dropdown">
+        <button onclick="drop()" class="dropbtn">ADVICE FOR BEGINNER GARDENERS</button>
+            <div id="myDropdown" class="dropdown-content">
+            <a style="border:none" href="creatingbeds.html">Creating Raised Garden Beds</a>
+            <a style="border:none" href="companionplanting.html">What is Companion Planting?</a>
+            <a style="border:none" href="pestmanagement.html">Pest Management</a>
+                </div>
+            </div>
+		<a href ="contact.html">CONTACT US</a>
+		</div> 	
+	</div> 
+    
+     
+
+	<div style = "margin-top:210px; padding:15px 15px 500px; font-size:30px">
+    &nbsp; <br> 
+    &nbsp; <br> 
+    &nbsp; <br> 
+    &nbsp; <br> 
+        <h1><b><i><p style="text-align: left">You can help us by buying our t-shirt! </p> </i> </b> </h1>
+    &nbsp; <br>
+        <div class="card" style="width: 600px; display: block; margin-left: 0px; float: left;">
+        <img src ="images/sell1.jpg" alt="sell1" style="width: 600px">
+        <h1>The Sharing Project T-Shirt</h1>
+        <p class="price">$19.99</p>
+        <p class="price"> This t-shirt can come in all sizes, small, medium and large. All the money used from this sale will be used to create and support new gardens.</p>
+        <p><button onclick="window.location.href='https://venmo.com/TheSharingProject'">Buy</button></p>
+        </div>
+        
+       <h1 style="text-align: left; margin-right: 300px; margin-left: 650px;"><i><b>You can also help by donating portions of your garden, so that we can grow the maximum amount of food. &nbsp; <br> <a target="_blank" href="https://venmo.com/TheSharingProject"><img id="donatenow" src="images/donate.png"></a> </b></i></h1>
+        
+        
+    </div>
+        
+        
+
+    
+    <script>
+        
+    window.onscroll = function() {scrollFunction()};
+        
+	function scrollFunction() {
+    
+		if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        
+			document.getElementById("navbar").style.padding = "20px 10px";  
+			document.getElementById("logo").style.width = "10%";
+            document.getElementById("logo").style.height = "10%";
+            document.getElementById("logotext").style.fontSize="22px"
+            document.getElementById("logotext").style.paddingLeft="200px"
+		}
+		else {
+			document.getElementById("navbar").style.padding = "50px 10px"; 
+			document.getElementById("logo").style.width = "15%";
+            document.getElementById("logo").style.height = "15%";
+            document.getElementById("logotext").style.fontSize="35px"
+            document.getElementById("logotext").style.paddingLeft="300px"
+		}	
+    }
+        function drop() {
+        document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) { 
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i; 
+                for (i=0; i < dropdowns.length; i++){
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+        function drop1() {
+        document.getElementById("myDropdown1").classList.toggle("show1");
+        }
+        
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn1')) { 
+                var dropdowns = document.getElementsByClassName("dropdown-content1");
+                var i; 
+                for (i=0; i < dropdowns.length; i++){
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show1')) {
+                        openDropdown.classList.remove('show1');
+                    }
+                }
+            }
+        }
+	</script> 
+        
+    </body>	
+
+</html>
+		
